@@ -1,0 +1,17 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const user_routes_1 = require("./routes/user.routes");
+const upload_routes_1 = require("./routes/upload.routes");
+const category_routes_1 = require("./routes/category.routes");
+const product_routes_1 = require("./routes/product.routes");
+const cart_routes_1 = require("./routes/cart.routes");
+const payment_routes_1 = require("./routes/payment.routes");
+const router = (0, express_1.Router)();
+router.use("/user", user_routes_1.userRouter);
+router.use("/upload", upload_routes_1.uploadRouter);
+router.use("/category", category_routes_1.cateRouter);
+router.use("/products", product_routes_1.productRouter);
+router.use("/cart", cart_routes_1.cartRouter);
+router.use("/payment", payment_routes_1.paymentRouter);
+exports.default = router;

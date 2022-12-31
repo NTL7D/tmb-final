@@ -1,0 +1,43 @@
+.cart-box {
+    position: relative;
+    border: 1px solid #ccc;
+    transform: scaleY(0.98);
+}
+
+.cart-amount {
+    span {
+        color: #dc143c;
+        padding: 0 20px;
+    }
+
+    button {
+        width: 40px;
+        height: 40px;
+        border: 1px solid #777;
+    }
+}
+
+.cart-delete {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    color: #dc143c;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.cart-total {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h3 {
+        color: #dc143c;
+    }
+}
+
+.paypal {
+    padding-top: 100px;
+}
